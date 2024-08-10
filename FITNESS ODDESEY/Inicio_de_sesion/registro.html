@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Registrarse</title>
+</head>
+<body>
+    
+    <div class="pagina" >
+    <div class="contenedor">
+        <img src="/img/logo.png" alt="LOGO">
+      <div>
+        <h1>REGISTRARSE</h1>
+        <h2 class="info"required>Nombre y apellido</h2>
+        <input id="Nombreyapellido" type="text" placeholder="email@dominio.com">
+        <h2 class="info">Edad</h2>
+        <input id="Edad" type="text">
+        <h2 class="info"required>Peso(KG)</h2>
+        <input id="peso" type="number" placeholder="60" >
+        <h2 class="info"required>Altura(Metros)</h2>
+        <input id="Altura" type="number" placeholder="1.60">
+        <h2 class="info"required>Correo</h2>
+        <input id="Correo" type="email" placeholder="email@dominio.com">
+        <h2 class="info"required>Contraseña</h2>
+        <input id="Contraseña" type="password">
+
+        <p id="error1"></p>
+
+
+        <div class="botones">
+          <button type="submit" name="button" class="boton" onclick="validar();">Ingresar</button>
+        </div>
+
+    </div>
+
+        <h5 class="otros">¿Ya tienes una cuenta? <a href="inicio de sesion.html" style="color: #08F996;">Inicia aquí</a></h5>
+        
+</div>
+<!--VENTANA EMERGENTE-->
+<div id="modal" class="modal-container">
+    <div class="modal-content">
+        <h2>ERROR AL INGRESAR DATOS</h2>
+        <p>Por favor, complete todos los campos requeridos antes de continuar.</p>
+        <img src="fondos/undraw_Forgot_password_re_hxwm.png" alt="">
+        <button id="close" class="close" onclick="Cerrar();" >Cerrar</button>
+    </div>
+</div>
+
+<footer>
+    <ul> 
+        <li><a href="https://www.instagram.com/_x.jimenez08/" style="text-decoration: none; color: #CCCCCC;"><img src="/icons/insta.png" id="insta">_x.jimenez08</a></li>
+        <li><a href="https://www.instagram.com/luiscortess1/" style="text-decoration: none; color: #CCCCCC;"><img src="/icons/insta.png" id="insta">luiscortess1</a></li>
+        <li><a href="https://www.instagram.com/ananiicolleee/" style="text-decoration: none; color: #CCCCCC;"><img src="/icons/insta.png" id="insta">ananiicolleee</a></li>
+    </ul>
+</footer>
+</div>
+<script src="verificar.js"></script>
+</body>
+
+</html>

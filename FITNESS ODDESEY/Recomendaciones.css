@@ -1,0 +1,97 @@
+html{
+    background-color: #212121;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    width: 904px;
+    height: 490px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#Fitnes{
+max-width: 120px;
+position: relative;
+left: 25px;
+top: 27px;
+}
+
+.paralelogramas{
+    position:fixed;  
+    transform: rotate(70deg);
+    left: 200px;
+    top: -45px; 
+}
+
+
+#paralelogramo {
+    width: 1500px; 
+    height: 200px;
+    background: #08F996;
+    transform: rotate(70deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+#paralelogramo2{
+    width: 1500px; 
+    height: 20px; 
+    background: white;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+    margin-bottom: 10px;
+}
+
+#paralelogramo2 p{
+    text-align:center;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 2px;
+    text-wrap: nowrap;
+        animation-name: moveRight;
+        animation-duration: 5s;
+        animation-iteration-count: infinite; /* Repetir infinitamente */
+        animation-timing-function: linear; /* Movimiento constante */
+}
+    @keyframes moveRight {
+        0% { transform: translatex(0); }
+        100% { transform: translatex(50px); } /* Mueve el texto hacia la derecha */
+    }
+    
+#mj-corriendo{
+    max-width: 60%;
+    position: fixed;
+    filter: opacity(0.5);
+    left: 50%;
+}
+
+
+.informacion{
+    position: relative;
+    height: 224px;
+    width: 450px;
+    max-width: 100%;
+    left: 20%;
+    top: -480px;
+}
+
+.informacion h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #FFFFFF;
+    width: 405px;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.informacion p{
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 20px;
+    width: 700px;
+}

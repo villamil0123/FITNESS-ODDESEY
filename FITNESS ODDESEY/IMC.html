@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="IMC.css">
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Fitness Oddesey</title>
+</head>
+<body>
+    <header> <a href="index.html"><img src="img/logo.png" alt=""></a></header>
+    <h1 id="titulo">calculadora IMC</h1>
+    <div class="paralelogramas" >
+        <div id="paralelogramo2"><p>- TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE - TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE -  TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE - TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE -  TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE - TU PUEDES - NO TE RINDAS - ESFUERZATE - ERES FUERTE -</p></div>
+    <div id="paralelogramo"></div>
+    </div>
+
+   
+    <div id="info" class="filtro" >
+        <h1>INGRESE SU PESO(KG)</h1>
+        <input type="number" id="peso" placeholder="65" required>
+        <h1>INGRESE SU ALTURA(M)</h1>
+        <input type="number" id="altura" placeholder="1.80" required>
+        <button  id="boton" class="btnfos btnfos-5"  onclick="Calc_imc();">Comenzar ></button> 
+        <p id="error1" style="color: red; padding-top: 15px;"></p>
+    </div> 
+    
+
+    <div id="modal" class="modal-container">
+        <div class="modal-content">
+            <h2>RESULTADOS</h2>
+            <p>IMC es el acrónimo de Índice de Masa Corporal, una medida ampliamente utilizada para calcular si el peso de una persona se encuentra proporcionado respecto a su altura o, por el contrario, padece de sobrepeso o infrapeso.</p>
+            <img src="icons/undraw_personal_trainer_re_cnua.svg" alt="">
+            <p id="resultado"></p>
+            <p id="calculo" ></p>
+            <button id="close" class="close" onclick="Cerrar();" >Cerrar</button>
+        </div>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
